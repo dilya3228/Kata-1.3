@@ -1,0 +1,24 @@
+@import "vars";
+@import "fonts";
+@import "icons";
+@import "default";
+@import "header";
+@import "main";
+@import "sidebar";
+@import "swiper";
+@import "footer";
+@import "modals";
+
+.wrapper {
+    min-height: 100vh;
+    max-width: 1440px;
+    position: relative;
+    margin: auto;
+    
+
+    @media screen and (min-width: 1440px) {
+        display: grid;
+        grid-template-columns: 320px auto;
+        grid-template-rows: auto;
+    }
+}

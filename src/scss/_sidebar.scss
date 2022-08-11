@@ -1,0 +1,137 @@
+.sidebar {
+    left: -100%;
+    top: 0;
+    transition: left 0.5s;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 320px;
+    min-height: 100vh;
+    flex-shrink: 0;
+    z-index: 90;
+    grid-row: 1 / 3;
+    overflow: hidden;
+
+    &--opened {
+        left: 0;
+    }
+
+    @media screen and (max-width: 1439.98px) {
+        position: fixed;
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+        16px 0px 52px rgba(14, 24, 80, 0.2);
+    }
+    
+    @media screen and (max-width: 360px) {
+        width: 100%;
+    }
+    
+
+    &__nav {
+        min-height: calc(100vh - 174px - 88px);
+        @media screen and (min-height: 1024px) {
+            min-height: 762px; //1024 - 174 - 88
+        }
+    }
+}
+
+.sidebar-header {
+    &__menu {
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        height: 88px;
+        gap: 16px;
+
+        @media screen and (min-width: 1440px) {
+            height: 122px;
+        }
+    }
+
+    &__close {
+        @media screen and (min-width: 1440px) {
+            display: none;
+        }
+    }
+
+    &__logo {
+        flex-grow: 1;
+    }
+}
+
+.nav {
+    &__item {
+        position: relative;
+        line-height: 32px;
+        font-weight: 500;
+        transition: color 0.15s;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            display: block;
+            left: -2px;
+            height: 32px;
+            width: 4px;
+            border-radius: 2px;
+            background-color: transparent;
+            transition: background-color 0.15s;
+        }
+        &--active::before {
+            background-color: #41F6D7;
+        }
+
+        &:not(.nav__item--active):hover .nav__link {
+            color: #FF3E79;
+        }
+        &:not(.nav__item--active):hover::before {
+            background-color: #FF3E79;
+        }
+        &--active .nav__link {
+            color: #7E7E82;
+            cursor: default;
+        }
+    }
+
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 0 24px;
+        margin: 0 0 24px;
+        color: #1B1C21;
+    }
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    line-height: 32px;
+
+    &__actions {
+        display: flex;
+        gap: 16px;
+    }
+    &__mail {
+        font-weight: 500;
+        color: #1B1C21;
+    }
+    &__tel {
+        font-weight: 600;
+        font-size: 24px;
+        color: #1B1C21;
+    }
+    &__lang {
+        margin: 24px 0;
+        display: flex;
+        gap: 8px;
+        font-weight: 500;
+    }
+    &__lang-item {
+        line-height: 1;
+    }
+}
+.lang-button--active {
+    color: #7E7E82;
+}
