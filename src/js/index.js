@@ -66,7 +66,6 @@ servicesButton.addEventListener("click", () => {
     }
 });
 
-
 let overlay = document.querySelector('.page-overlay');
 let overlaySidebar = document.querySelector('.sidebar-overlay')
 let sidebar = document.querySelector('.sidebar');
@@ -86,7 +85,6 @@ overlaySidebar.addEventListener("click", () => {
     overlaySidebar.classList.add("sidebar-overlay--hidden");
     sidebar.classList.remove("sidebar--opened");
 });
-
 
 let modalCall = document.querySelector('#modal-call');
 let modalCallClose = document.querySelector('#modal-call-close');
