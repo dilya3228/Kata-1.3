@@ -290,9 +290,11 @@ summary {
       .header-button__text {
         display: none; } }
   .header-button:hover .header-button__icon {
-    background-color: #41F6D7; }
+    background-color: #5b00ee;
+    transition: .3s; }
   .header-button:hover .header-button__text {
-    color: #41F6D7; }
+    color: #5b00ee;
+    transition: .3s; }
 
 .main {
   width: 100%; }
@@ -466,6 +468,10 @@ summary {
   .pill-button__icon {
     width: 24px;
     height: 24px; }
+
+.pill-button:hover {
+  background-color: #5b00ee;
+  transition: .3s; }
 
 .sidebar {
   left: -100%;
@@ -777,6 +783,9 @@ summary {
     font-weight: 600;
     line-height: 24px;
     text-transform: uppercase; }
+    .prices__swiper .swiper-slide__btn:hover {
+      background-color: #5b00ee;
+      transition: .3s; }
   .prices__swiper .swiper-slide__item {
     height: 200px;
     width: 260px; }
