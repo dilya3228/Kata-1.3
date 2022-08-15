@@ -101,10 +101,12 @@
     
     &:hover {
         .header-button__icon {
-            background-color: #41F6D7;
+            background-color: #5b00ee;
+            transition: .3s;
         }
         .header-button__text {
-            color: #41F6D7;
+            color: #5b00ee;
+            transition: .3s;
         }
     }
 }

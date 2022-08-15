@@ -220,7 +220,6 @@
     left: 0;
     z-index: 50;
 
-
     &--hidden {
         display: none;
     }
@@ -243,4 +242,8 @@
         width: 24px;
         height: 24px;
     }
+}
+.pill-button:hover{
+    background-color: #5b00ee;
+    transition: .3s;
 }

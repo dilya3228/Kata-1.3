@@ -25,12 +25,11 @@
     @media screen and (max-width: 360px) {
         width: 100%;
     }
-    
 
     &__nav {
         min-height: calc(100vh - 174px - 88px);
         @media screen and (min-height: 1024px) {
-            min-height: 762px; //1024 - 174 - 88
+            min-height: 762px;
         }
     }
 }
@@ -60,6 +59,7 @@
 }
 
 .nav {
+    
     &__item {
         position: relative;
         line-height: 32px;

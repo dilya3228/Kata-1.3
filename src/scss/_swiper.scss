@@ -78,7 +78,6 @@
         column-gap: var(--h-indent);
     }
 
-
     @media screen and (min-width: 1120px) {
         grid-template-columns: repeat(4, 1fr);
     }
@@ -123,7 +122,6 @@
     }
 
     &__item{
-        
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -161,9 +159,6 @@
         } 
     }
     
-
-
-
     &__icon {
         height: 40px;
         width: 40px;
@@ -172,7 +167,6 @@
         transition: all 0.15s;
     }
 }
-
 
 .devices {
 
@@ -202,11 +196,9 @@
             margin-top: 16px;
         }
         
-
         @media screen and (min-width: 767.98px) {
             grid-template-rows: repeat(1, 1fr);
         }
-        
     }
 
     .swiper-slide{
@@ -226,7 +218,6 @@
 }
 
 .prices__swiper{
-
     height: 240px;
 
     @media screen and (min-width: 768px) {
@@ -256,7 +247,6 @@
             height: 200px;
             width: 260px;
 
-
             &__btn {
                 grid-row-start: 3;
                 grid-row-end: 4;
@@ -269,7 +259,6 @@
         }
 
         &__btn {
-            
             height: 32px;
             width: 119px;
             background-color: #FF3E79;
@@ -282,6 +271,11 @@
             font-weight: 600;
             line-height: 24px;
             text-transform: uppercase;
+
+            &:hover{
+                background-color: #5b00ee;
+                transition: .3s;
+            }
         }
 
         &__item {
@@ -298,7 +292,6 @@
                 padding: 0;
             }
         }
-
         
     }
     .swiper-slide:last-of-type .swiper-slide__item {
